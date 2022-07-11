@@ -51,7 +51,7 @@ public class LucasTests {
         Exception exception = null;
         //Act
         try {
-            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
             pedido.concluir(); //conclui pedido
             pedido.preparar(); //prepara pedido
             pedido.sairParaEntrega(); //manda para entrega
@@ -76,7 +76,7 @@ public class LucasTests {
         Exception exception = null;
         //Act
         try {
-            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
             pedido.concluir(); //conclui pedido
             pedido.pagar(); //paga um pedido concluido
             pedido.sairParaEntrega(); //manda para entrega
@@ -101,7 +101,7 @@ public class LucasTests {
         Exception exception = null;
         //Act
         try {
-            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
             pedido.concluir(); //conclui pedido
             pedido.pagar(); //paga um pedido concluido
             pedido.preparar(); //prepara pedido
@@ -126,7 +126,7 @@ public class LucasTests {
         Exception exception = null;
         //Act
         try {
-            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
             pedido.concluir(); //conclui pedido
             pedido.pagar(); //paga um pedido concluido
             pedido.concluir(); //conclui pedido novamente
@@ -153,7 +153,7 @@ public class LucasTests {
         Exception exception = null;
         //Act
         try {
-            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
             pedido.reembolsar(); //reembolsa o pedido
             pedido.concluir(); //conclui pedido
             pedido.pagar(); //paga um pedido concluido
@@ -180,7 +180,7 @@ public class LucasTests {
         Exception exception = null;
         //Act
         try {
-            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+            pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
             pedido.concluir(); //conclui pedido
             pedido.pagar(); //paga um pedido concluido
             pedido.preparar(); //prepara pedido
@@ -220,7 +220,7 @@ public class LucasTests {
         estabelecimento = new Estabelecimento("Loja da Esquina"); //cria estabelecimento
         Pedido pedido = new Pedido(1, cliente, estabelecimento, LocalTime.now()); //cria pedido
         //Act
-        pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(1), 1)); //inclui item no pedido
+        pedido.incluir(new ItemPedido(pedido, dao.buscaProdutoPorCodigo(24), 1)); //inclui item no pedido
         pedido.concluir(); //conclui pedido
         pedido.pagar(); //paga um pedido concluido
         pedido.preparar(); //prepara pedido
